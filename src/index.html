@@ -1,13 +1,104 @@
-<!DOCTYPE html>
 <html>
+  <head>
+    <title>Watch</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Nunito"
+    />
+  </head>
 
-<head>
-    <meta charset="utf-8">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-    <!-- support for mobile touch devices -->
-    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
-</head>
-<body>
-    <h1>Title</h1>
-</body>
+  <body>
+    <div class="Watch">
+      <div class="Strap"></div>
+      <div class="Screen">
+        <div class="Crown"></div>
+        <div class="Button"></div>
+        <div class="btns">
+          <div class="btn reset">Reset</div>
+          <div class="btn night">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              fill="inherit"
+              version="1.1"
+              width="20"
+              height="20"
+              viewBox="0 0 256 256"
+              xml:space="preserve"
+            >
+              <desc>nightmode</desc>
+              <defs></defs>
+              <g transform="translate(128 128) scale(0.72 0.72)" fill="inherit">
+                <g
+                  fill="inherit"
+                  style="
+                    stroke: none;
+                    stroke-width: 0;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    opacity: 1;
+                  "
+                  transform="translate(-175.05 -175.05000000000004) scale(3.89 3.89)"
+                >
+                  <path
+                    fill="inherit"
+                    d="M 87.823 60.7 c -0.463 -0.423 -1.142 -0.506 -1.695 -0.214 c -15.834 8.398 -35.266 2.812 -44.232 -12.718 c -8.966 -15.53 -4.09 -35.149 11.101 -44.665 c 0.531 -0.332 0.796 -0.963 0.661 -1.574 c -0.134 -0.612 -0.638 -1.074 -1.259 -1.153 c -9.843 -1.265 -19.59 0.692 -28.193 5.66 C 13.8 12.041 6.356 21.743 3.246 33.35 S 1.732 57.08 7.741 67.487 c 6.008 10.407 15.709 17.851 27.316 20.961 C 38.933 89.486 42.866 90 46.774 90 c 7.795 0 15.489 -2.044 22.42 -6.046 c 8.601 -4.966 15.171 -12.43 18.997 -21.586 C 88.433 61.79 88.285 61.123 87.823 60.7 z"
+                    style="
+                      stroke: none;
+                      stroke-width: 1;
+                      stroke-dasharray: none;
+                      stroke-linecap: butt;
+                      stroke-linejoin: miter;
+                      stroke-miterlimit: 10;
+                      opacity: 1;
+                    "
+                    transform=" matrix(1 0 0 1 0 0) "
+                    stroke-linecap="round"
+                  />
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="Clock">
+          <div class="hours">
+            <div class="first">
+              <div class="number">0</div>
+            </div>
+            <div class="second">
+              <div class="number">0</div>
+            </div>
+          </div>
+          <div class="tick">:</div>
+          <div class="minutes">
+            <div class="first">
+              <div class="number">0</div>
+            </div>
+            <div class="second">
+              <div class="number">0</div>
+            </div>
+          </div>
+          <div class="tick">:</div>
+          <div class="seconds">
+            <div class="first">
+              <div class="number">0</div>
+            </div>
+            <div class="second infinite">
+              <div class="number">0</div>
+            </div>
+          </div>
+        </div>
+        <div class="btns">
+          <div class="btn mode">Mode</div>
+          <div class="btn increase">Increase</div>
+        </div>
+      </div>
+      <div class="Strap" reflect="true"></div>
+    </div>
+    <script src="src/index.ts"></script>
+  </body>
 </html>
